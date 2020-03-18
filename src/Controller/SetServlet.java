@@ -39,7 +39,7 @@ public class SetServlet extends HttpServlet {
 		if(add!=null) {
 			// call the add method and store the return value in a set variable
 			
-			request.setAttribute("bucketListadd", /*pass the return value */);
+			request.setAttribute("bucketListadd", name);
 			request.setAttribute("message", "user added successfully");
 			RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/list.jsp");
 			rd.forward(request, response);
@@ -49,7 +49,7 @@ public class SetServlet extends HttpServlet {
 			// call the remove method and store the return value in a set variable
 			
 			
-			request.setAttribute("bucketListremove", /*pass the return value */);
+			request.setAttribute("bucketListremove", name);
 			RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/list.jsp");
 			rd.forward(request, response);
 		}
@@ -59,7 +59,7 @@ public class SetServlet extends HttpServlet {
 			// call the sortByDestination method and store the return value in a set variable
 			
 			
-			request.setAttribute("bucketList", /*pass the return value */);
+			request.setAttribute("bucketList", name);
 			RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/list.jsp");
 			rd.forward(request, response);
 		}
@@ -67,7 +67,7 @@ public class SetServlet extends HttpServlet {
 		if(sortbyrank!=null) {
 			// call the sortByRank method and store the return value in a set variable
 			
-			request.setAttribute("bucketList", /*pass the return value */);
+			request.setAttribute("bucketList", name);
 			RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/list.jsp");
 			rd.forward(request, response);
 		}
@@ -75,7 +75,7 @@ public class SetServlet extends HttpServlet {
 		if(reset!=null) {
 			// call the reset method and store the return value in a set variable
 			
-			request.setAttribute("bucketList", /*pass the return value */);
+			request.setAttribute("bucketList", name);
 			RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/list.jsp");
 			rd.forward(request, response);
 		}
